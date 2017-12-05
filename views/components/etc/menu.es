@@ -96,6 +96,13 @@ if (process.platform !== 'darwin') {
           },
         },
         {
+          label: __('Back'),
+          accelerator: 'Ctrl+Backspace',
+          click: (item, focusedWindow) => {
+            exeCodeOnWindowHasReloadArea(focusedWindow, 'goBack()')
+          },
+        },
+        {
           label: __('Developer Tools'),
           accelerator: 'Ctrl+Shift+I',
           click: (item, focusedWindow) => {
